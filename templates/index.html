@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Переводчик</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <input type="file" accept="application/json" name="file">
+    <label>
+        Основной язык
+        <input name="mainLanguage" value="ro">
+    </label>
+    <button id="sendbtn">Перевести</button>
+</body>
+
+</html>
+<script src="{{url_for('static', filename='js/PGT.js')}}"></script>

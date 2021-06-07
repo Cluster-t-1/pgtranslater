@@ -29,12 +29,12 @@ class FlaskConfig:
 
 
 serverHost = 'localhost'
-serverPort = 8005 if isProduction else 5000
+serverPort = os.environ.get("PORT", 5000)
 
 langs = ['ru', 'ro', 'en']
 
-backendAddress = "https://teatru-server.itways.org" if isProduction else f"http://{serverHost}:{serverPort}"
-frontendAddress = "https://teatru-client.itways.org" if isProduction else "http://localhost:4200"
+# backendAddress = "https://teatru-server.itways.org" if isProduction else f"http://{serverHost}:{serverPort}"
+# frontendAddress = "https://teatru-client.itways.org" if isProduction else "http://localhost:4200"
 
 logsAuthUserName = "admin001"  # /logs
 logsAuthPassword = "001"

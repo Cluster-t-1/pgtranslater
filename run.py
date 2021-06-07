@@ -7,7 +7,7 @@ from config import serverPort
 app.route('/')(index)
 app.route('/logs')(getLogs)
 
-saveLogsToFile()
+# saveLogsToFile()
 
 if __name__ == '__main__':
     app.run(port=serverPort)

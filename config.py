@@ -1,6 +1,6 @@
 import os
 
-isProduction = os.environ.get("IS_DROPLET") == "true"
+isProduction = True
 
 postgresConfig = {
     "user": "postgres",
